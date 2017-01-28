@@ -41,6 +41,7 @@ function iddt_register_post_type(){
 
   $singular = 'Job Listin';
   $plural = 'Job Listins';
+  $slug = str_replace( ' ', '_', strtolower( $singular ) );
 
   $labels = array(
     'name'               => $plural,
